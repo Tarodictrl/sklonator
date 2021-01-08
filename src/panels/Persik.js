@@ -7,27 +7,30 @@ import PanelHeaderButton from '@vkontakte/vkui/dist/components/PanelHeaderButton
 import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
 
-import gachi from '../img/gachi.gif';
-import './gachi.css';
+
+import persik from '../img/Persik.gif';
+import './Persik.css';
 
 const osName = platform();
 
-const gachi = props => (
+const Persik = props => (
 	<Panel id={props.id}>
 		<PanelHeader
 			left={<PanelHeaderButton onClick={props.go} data-to="home">
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</PanelHeaderButton>}
 		>
-			gachi
+			Gachi
 		</PanelHeader>
-		<img className="gachi" src={gachi} alt="Gachi The Man"/>
+		<img className="Persik" src={persik} alt="Gachi The man"/>
 	</Panel>
 );
 
-gachi.propTypes = {
+Persik.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
 };
 
-export default gachi;
+
+export default Persik;
+
